@@ -1,0 +1,73 @@
+
+============================
+What is Software Testing ?
+============================
+
+=> Process of verfication and validation
+
+=> Software Testing will happen in multiple ways
+
+	1) Unit Testing  
+
+	2) Smoke Testing
+
+	3) Functionality Testing
+
+	4) Regression Testing
+
+	5) Performance Testing
+
+
+# Unit Testing : Testing individual components of application (developers)
+
+# Smoke Testing : Checking the main functionalities are working or not (build acceptance testing)
+
+Note: If crucial functionalites are working then build will be accepted by testing team to proceed with next phase of testing.
+
+# Functionality Testing : Testing all the functionalities are working as expected by the client or not. If any functionality not working then testers will raise defect/bug using JIRA.
+
+# Regression Testing :  The process of testing the modified parts of the code and the parts that might get affected due to the modifications.
+
+# Performance Testing : The process of testing application stability and responsiveness.
+
+=> With the help of performance testing we will get answers for below questions
+
+	1) How many users can access our application at a time
+
+	2) What is avg response time of our application
+
+	3) What is bottleneck/failure of our application
+
+=> We can use JMETER to implement performance test on the application.
+
+================
+What is JMETER
+================
+
+=> Free and Open source software
+
+=> Developed by using Java Language
+
+=> Developed by Apache Org
+
+=> Used for Performance testing
+
+====================
+Creating Test Plan
+====================
+
+Step-1 : Right Click on Test plan & Add Thread Group
+
+Step-2 : Right Click on Thread Group -> Add Sampler => Add HTTP Request
+
+Step-3 : Configure API information in HTTP Request
+
+Step-4 : Right Click on Thread Group -> Add Listeners
+
+				- Summary Report
+
+				- View Results Tree
+
+Step-5 : Save Test Plan and execute it
+
+Step-6 : Monitor View Results Tree & Summary Result
